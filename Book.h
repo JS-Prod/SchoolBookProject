@@ -7,10 +7,10 @@ class Book {
 public:
 	string title;
 	string author;
-	string isbn;
+	int isbn;
 	bool isAvailable;
 
-	Book(string title, string author, string isbn);
+	Book(string title, string author, int isbn);
 
 	void setBookDetails();
 	void displayBookDetails();

@@ -4,7 +4,7 @@
 
 //test comment
 
-Book::Book(string t, string a, string i) {
+Book::Book(string t, string a, int i) {
 	title = t;
 	author = a;
 	isbn = i;
@@ -19,7 +19,7 @@ void Book::setBookDetails() {
 	getline(cin, author);
 
 	cout << "Enter ISBN: ";
-	getline(cin, isbn);
+	cin >> isbn;
 
 	isAvailable = true; 
 }
